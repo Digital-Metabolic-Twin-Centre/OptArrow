@@ -266,7 +266,7 @@
 </div>
 <p>Please ensure that the executables for the solvers are properly installed and in the system PATH.</p>
 <section id="to-create-and-activate-virtual-environment">
-<h2>To create and activate virtual environment<a class="headerlink" href="#to-create-and-activate-virtual-environment" title="Link to this heading">¶</a></h2>
+<h3>To create and activate virtual environment<a class="headerlink" href="#to-create-and-activate-virtual-environment" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
 <span class="c1"># On windows</span>
 .venv/Scripts/activate
@@ -276,7 +276,7 @@
 </div>
 </section>
 <section id="to-install-dependency">
-<h2>To install dependency<a class="headerlink" href="#to-install-dependency" title="Link to this heading">¶</a></h2>
+<h3>To install dependency<a class="headerlink" href="#to-install-dependency" title="Link to this heading">¶</a></h3>
 <p>Install <code class="docutils literal notranslate"><span class="pre">poetry</span></code> first. See <a class="reference external" href="https://python-poetry.org/docs/">Poetry install</a></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># With poetry</span>
 poetry<span class="w"> </span>install<span class="w"> </span>--no-root
@@ -284,7 +284,7 @@ poetry<span class="w"> </span>install<span class="w"> </span>--no-root
 </div>
 </section>
 <section id="to-install-new-dependency-package">
-<h2>To install new dependency package<a class="headerlink" href="#to-install-new-dependency-package" title="Link to this heading">¶</a></h2>
+<h3>To install new dependency package<a class="headerlink" href="#to-install-new-dependency-package" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># With poetry</span>
 poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency-name&gt;
 </pre></div>
@@ -292,38 +292,38 @@ poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency-name&gt;
 <p>Please don't use pip or any other dependency management.</p>
 </section>
 <section id="to-start-all-server-instances-engine-gateway">
-<h2>To start all server instances (engine + gateway)<a class="headerlink" href="#to-start-all-server-instances-engine-gateway" title="Link to this heading">¶</a></h2>
+<h3>To start all server instances (engine + gateway)<a class="headerlink" href="#to-start-all-server-instances-engine-gateway" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh<span class="w"> </span>scripts/startAll
 </pre></div>
 </div>
 </section>
 <section id="to-start-gateway-service-instances">
-<h2>To start gateway service instances<a class="headerlink" href="#to-start-gateway-service-instances" title="Link to this heading">¶</a></h2>
+<h3>To start gateway service instances<a class="headerlink" href="#to-start-gateway-service-instances" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh<span class="w"> </span>scripts/startServer
 </pre></div>
 </div>
 </section>
 <section id="to-start-python-engine-service-instances">
-<h2>To start python engine service instances<a class="headerlink" href="#to-start-python-engine-service-instances" title="Link to this heading">¶</a></h2>
+<h3>To start python engine service instances<a class="headerlink" href="#to-start-python-engine-service-instances" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh<span class="w"> </span>scripts/startPyEngine
 </pre></div>
 </div>
 </section>
 <section id="to-start-julia-engine-service-instances">
-<h2>To start julia engine service instances<a class="headerlink" href="#to-start-julia-engine-service-instances" title="Link to this heading">¶</a></h2>
+<h3>To start julia engine service instances<a class="headerlink" href="#to-start-julia-engine-service-instances" title="Link to this heading">¶</a></h3>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh<span class="w"> </span>scripts/startJulia
 </pre></div>
 </div>
 </section>
 <section id="to-run-unit-tests">
-<h2>To run unit tests<a class="headerlink" href="#to-run-unit-tests" title="Link to this heading">¶</a></h2>
+<h3>To run unit tests<a class="headerlink" href="#to-run-unit-tests" title="Link to this heading">¶</a></h3>
 <p>Remember to start all the services before running tests, otherwise the tests will fail.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>run<span class="w"> </span>pytest
 </pre></div>
 </div>
 </section>
 <section id="docker">
-<h2>Docker<a class="headerlink" href="#docker" title="Link to this heading">¶</a></h2>
+<h3>Docker<a class="headerlink" href="#docker" title="Link to this heading">¶</a></h3>
 <p>Alternatatively, Docker can be used to create segregated environments for running all the services in different containers in a production environment. Use <code class="docutils literal notranslate"><span class="pre">server.dockerfile</span></code> to create container for gateway server service.</p>
 <p>Docker environment is required. To install Docker, see <a class="reference external" href="https://docs.docker.com/engine/install/">Docker install</a></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In project directory:</span>
@@ -348,16 +348,16 @@ docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </sp
 </div>
 </section>
 <section id="configure-service-ports">
-<h2>Configure service ports<a class="headerlink" href="#configure-service-ports" title="Link to this heading">¶</a></h2>
+<h3>Configure service ports<a class="headerlink" href="#configure-service-ports" title="Link to this heading">¶</a></h3>
 <p>See <code class="docutils literal notranslate"><span class="pre">config.yaml</span></code> for service ip/port configurations.</p>
 <p>If ports are changed, remember to change the Dockerfiles respectively to ensure the right ports are opened.</p>
 </section>
 <section id="scripts-in-scripts-folder">
-<h2>Scripts in ./scripts folder<a class="headerlink" href="#scripts-in-scripts-folder" title="Link to this heading">¶</a></h2>
+<h3>Scripts in ./scripts folder<a class="headerlink" href="#scripts-in-scripts-folder" title="Link to this heading">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">envSetup.sh</span></code> script can be used to install dependencies on a Linux(Debian) system, and other scripts starts different services. The <code class="docutils literal notranslate"><span class="pre">startAll.sh</span></code> runs all the services on local machine.</p>
 </section>
 <section id="extending-the-code">
-<h2>Extending the code<a class="headerlink" href="#extending-the-code" title="Link to this heading">¶</a></h2>
+<h3>Extending the code<a class="headerlink" href="#extending-the-code" title="Link to this heading">¶</a></h3>
 <p>See <a class="reference internal" href="contributing.html"><span class="std std-doc">Contributing.md</span></a>.</p>
 </section>
 </section>
